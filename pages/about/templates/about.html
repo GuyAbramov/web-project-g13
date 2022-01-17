@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'About' %}
+
+{% block page_head_css %}
+<link rel="stylesheet" href="{{ url_for('about.static', filename='css/about.css') }}"/>
+{% endblock %}
+
+{% block page_body_js %}
+<script src="{{ url_for('about.static', filename='js/about.js') }}"></script>
+{% endblock %}
+
+{% set page_title = 'אודות' %}
+
+{% block page_body_main_content %}
+<div class="Title_about_page">
+    <h2>המספרה של ירין ששון</h2>
+    <h3>עיצוב שיער המשלב יצירתיות, סטייל ואמנות</h3>
+</div>
+<div class="aboutText">
+    <div class="aboutLeft">
+        <img src={{ url_for('about.static',filename='media/Yarin1.jpg') }} , alt ="pic1" onmouseover="changepic1(this)" onmouseout="changpic2(this)">
+    </div>
+    <div class="TextRight">
+        <p>
+            מספרת ירין ששון ממוקמת בעיר באר שבע ומשלבת יצירתיות, סגנון, חדשנות, סטייל ואמנות.
+            המספרה משרתת נאמנה אין ספור לקוחות המגיעים גם מהסביבה וגם ממרחק.
+            עם ירין, בעל ניסיון של שנים רבות בתחום, אתם יכולים להיות בטוחים שהשיער שלכם יקבל את היחס הטוב ביותר.
+            הכל בהתאמה אישית, ללא פשרות ועם החומרים הטובים ביותר!
+            המספרה מציעה מגוון טיפולי עיצוב שיער, החלקות שיער, צבע, גוונים,
+            שטיפות, סלסולים, הבהרות ועוד.
+            לצד הניסיון הרב שנצבר במשך
+            השנים, מקפידים כל הזמן להתעדכן ולהוביל.
+        </p>
+    </div>
+</div>
+{% endblock %}
+{% block page_body_main_more %}
+<div>
+    <div class="Title_about_page">
+        <h2>שעות הפעילות</h2>
+    </div>
+    <div class="table_days">
+        <div class= "day">
+            <p class="text">ראשון <br> 08:00 - 17:00 </p>
+        </div>
+        <div class= "day not_working">
+            <p class="text">שני <br> --- סגור --- </p>
+        </div> <div class= "day">
+        <p class="text">שלישי <br> 08:00 - 17:00 </p>
+    </div> <div class= "day">
+        <p class="text">רביעי <br> 08:00 - 17:00 </p>
+    </div> <div class= "day">
+        <p class="text">חמישי <br> 08:00 - 17:00 </p>
+    </div> <div class= "day">
+        <p class="text">שישי <br> 08:00 - 17:00 </p>
+    </div> <div class= "day not_working">
+        <p class="text">שבת <br>  --- סגור --- </p>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+

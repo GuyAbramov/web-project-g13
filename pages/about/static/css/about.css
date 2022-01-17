@@ -1,0 +1,97 @@
+.aboutText{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.Title_about_page {
+    padding: 18px;
+}
+
+.Title_about_page h2{
+    line-height: 70%;
+    font-weight: normal !important;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Title_about_page h3{
+    width: 100%;
+    margin-top: 15px;
+    color: #4ca3af;
+    margin-bottom: 0%;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.TextRight{
+    width: 55%;
+    align-self: center;
+}
+.TextRight p{
+    font-style: normal !important;
+    letter-spacing: 0 !important;
+    text-align: right;
+    direction: rtl;
+    line-height: 28px;
+    margin: 0 0 10px;
+    font-size: 24px;
+    width: 75%;
+}
+
+.aboutLeft img{
+    width: 70%;
+}
+
+
+.title_about.about {
+    margin: auto;
+    text-align: center;
+    border-bottom: solid;
+    width: 24%;
+}
+
+.img_title {
+    font-size: xx-large;
+    text-align-last: center;
+}
+
+.barber_srvis {
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+}
+
+.table_days {
+    justify-content: center;
+    display: flex;
+    color:#18444c;
+    padding: 4% 6%;
+}
+
+.day {
+    padding: 3% 0;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #c76a6a;
+}
+
+.day:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.day.not_working {
+    background: #18444c;
+}
+
+.text{
+    font-family: Assi;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color:#fff;
+}

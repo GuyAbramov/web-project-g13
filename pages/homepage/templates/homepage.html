@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% set page_head_title = 'Homepage' %}
+
+{% block page_head_css %}
+<link rel="stylesheet" href="{{ url_for('homepage.static', filename='css/homepage.css') }}"/>
+{% endblock %}
+
+{% block page_body_main_content %}
+<h1>homepage</h1>
+<p>This is an example catalog page</p>
+<p> Section 1</p>
+<p> Section 2</p>
+<p> Section 3</p>
+{% endblock %}
+
+{% block page_body_footer %}
+{% include 'footer.html' %}
+{% endblock %}
+
+{% block page_body_js %}
+<script src="{{ url_for('homepage.static', filename='js/homepage.js') }}"></script>
+{% endblock %}
